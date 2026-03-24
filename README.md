@@ -31,8 +31,7 @@ A portfolio-ready **Interest Calculation Engine** implemented in Oracle PL/SQL c
 
 ## Compatibility
 
-- Tested on Oracle **19c / 21c / 23c**
-- Works on Oracle XE as well
+- Tested on Oracle **21c**
 - No external dependencies
 
 ---
@@ -117,7 +116,7 @@ git init
 git add .
 git commit -m "Initial commit: Interest Calculation Engine (CASA & TD)"
 git branch -M main
-git remote add origin https://github.com/<your-username>/interest-engine-plsql.git
+git remote add origin https://github.com/sanjanasunil029/interest-calculation-engine-plsql.git
 git push -u origin main
 ```
 
@@ -125,7 +124,6 @@ git push -u origin main
 
 ## Notes
 
-- Partition script is optional and commented for Oracle editions without partitioning.
 - Uses **set-based SQL**, actual tables are **idempotent** (MERGE on PKs).
 - Rounding applied only at posting (configurable).
 
